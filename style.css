@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.container {
+  width: 375px;
+  margin: 0 auto;
+  background-color: #ecf2f8;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.3rem;
+  background-color: #733fc8;
+  border-radius: 0.8rem;
+  box-shadow: 40px 60px 50px -57px rgba(72, 85, 106, 0.24);
+  padding: 3rem;
+  margin: 2.5rem 2.5rem;
+}
+
+.customer-daniel {
+  margin-top: 5rem;
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+}
+
+.details {
+  display: flex;
+  column-gap: 1.6rem;
+  align-items: center;
+}
+
+img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+.daniel-img-box img,
+.patrick-img-box img {
+  border: 3px solid #a775f1;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  color: #ffffff;
+}
+
+.verified {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.1rem;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.big-text {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: #ffffff;
+}
+
+.small-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #cfcfcf;
+  opacity: 0.7;
+  margin-top: 3rem;
+  padding-right: 1.5rem;
+}
+
+.customer-jonathan {
+  background-color: #48556a;
+}
+
+.no-margin {
+  margin-top: 0;
+  padding-right: 0;
+}
+
+.customer-jeanette {
+  background-color: #ffffff;
+}
+
+.jeanette-name,
+.jeanette-verification,
+.h1-jeanette,
+.p-jeanette {
+  color: #48556a;
+}
+
+.customer-patrick {
+  background-color: #19202d;
+}
+
+.p-patrick {
+  padding-right: 1rem;
+}
+
+.customer-kira {
+  background-color: #ffffff;
+}
+
+.kira-name,
+.kira-verification,
+.h1-kira,
+.p-kira {
+  color: #48556a;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    padding: 16rem;
+    gap: 2rem;
+  }
+
+  .customer-daniel {
+    grid-column: 1/3;
+  }
+
+  .customer-jeanette {
+    grid-column: 1/2;
+  }
+
+  .customer-patrick {
+    grid-column: 2/4;
+  }
+
+  .customer-kira {
+    grid-column: 4/5;
+    grid-row: 1/-1;
+    padding-bottom: 0;
+  }
+
+  .p-daniel {
+    margin-top: 0;
+  }
+
+  .card {
+    margin: 0;
+  }
+
+  .customer-daniel {
+    background-position: 80% 0%;
+  }
+}
